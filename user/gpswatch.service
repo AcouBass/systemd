@@ -1,0 +1,9 @@
+[Unit]
+Description=Pull from GPS watch on connection
+
+[Service]
+Type=forking
+ExecStart=/home/eddie/pipes/gps_watch_monitor.py
+WorkingDirectory=/home/eddie/rides/
+[Install]
+WantedBy=mystuff.target

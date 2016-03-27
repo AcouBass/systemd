@@ -1,0 +1,10 @@
+
+[Unit]
+Description=Timer for dmenufm
+
+[Timer]
+OnUnitActiveSec=21600
+Unit=dmenufm.service
+
+[Install]
+WantedBy=default.target

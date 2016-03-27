@@ -1,0 +1,9 @@
+[Unit]
+Description=sync with mega.co.nz
+
+[Timer]
+OnCalendar=08:00
+Unit=mega.service
+
+[Install]
+WantedBy=default.target

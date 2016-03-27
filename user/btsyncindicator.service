@@ -1,0 +1,12 @@
+[Unit]
+Description = btsync indicator
+After = wm.target
+
+[Service]
+ExecStart = /usr/bin/btsyncindicator --config /home/eddie/.config/btsync/btsync.conf --iconpath /usr/share/pixmaps/btsyncindicator
+
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

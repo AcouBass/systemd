@@ -1,0 +1,9 @@
+[Unit]
+Description=get_iplayer PVR
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/get_iplayer --pvr
+
+[Install]
+WantedBy=mystuff.target

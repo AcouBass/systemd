@@ -1,0 +1,17 @@
+[Unit]
+Description=your window manager service
+Before=mystuff.target
+After=xorg.target
+After=dbus.service
+Requires=xorg.target
+Requires=dbus.service
+
+[Service]
+#Environment=PATH=uncomment:to:override:your:PATH
+ExecStart=/usr/bin/i3
+Environment=DISPLAY=:0
+Restart=always
+RestartSec=10
+ 
+[Install]
+WantedBy=wm.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Pull from Owncloud calendar to Org-mode Agenda
+
+[Service]
+Type=oneshot
+ExecStart=/home/eddie/pipes/ical2org.sh
+
+[Install]
+WantedBy=mystuff.target

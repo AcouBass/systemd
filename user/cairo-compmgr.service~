@@ -1,0 +1,13 @@
+[Unit]
+Description = cairo-compmgr
+After=dbus.service
+Requires=dbus.service
+
+[Service]
+ExecStart = /usr/bin/cairo-compmgr
+Environment=DISPLAY=:0 #
+Restart = always
+
+
+[Install]
+WantedBy = mystuff.target

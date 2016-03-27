@@ -1,0 +1,10 @@
+[Unit]
+Description = clipit for clipboard
+After=wm.target
+
+[Service]
+ExecStart = /usr/bin/clipit
+Environment=DISPLAY=:0 
+
+[Install]
+WantedBy = mystuff.target

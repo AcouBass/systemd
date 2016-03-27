@@ -1,0 +1,8 @@
+[Unit]
+Description=sync with mega.co.nz
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/megasync
+[Install]
+WantedBy=mystuff.target

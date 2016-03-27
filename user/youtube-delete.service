@@ -1,0 +1,7 @@
+[Unit]
+Description=delete old youtube videos
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'find $HOME/Videos/youtubes/ -type f -mtime +7 -exec rm -rf {} \; '
+[Install]
+WantedBy=mystuff.target

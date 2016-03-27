@@ -1,0 +1,12 @@
+[Unit]
+Description = Firefox
+After=xorg.target
+After=openbox.service
+
+[Service]
+ExecStart = /usr/bin/firefox
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

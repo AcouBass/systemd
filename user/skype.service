@@ -1,0 +1,10 @@
+[Unit]
+Description = Skype
+
+[Service]
+ExecStart = /usr/bin/skype
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

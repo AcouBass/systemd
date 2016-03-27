@@ -1,0 +1,10 @@
+[Unit]
+Description=Xinitrc Stuff
+Wants=wm.target
+After=xorg.target
+After=dbus.service
+Requires=xorg.target
+Requires=dbus.service
+
+[Install]
+Alias=default.target

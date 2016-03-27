@@ -1,0 +1,11 @@
+[Unit]
+Description = Feh
+
+[Service]
+ExecStart = /usr/bin/feh --no-xinerama --bg-scale /home/eddie/.anypaper/output.png
+Environment=DISPLAY=:0 #
+Restart = always
+
+
+[Install]
+WantedBy = mystuff.target

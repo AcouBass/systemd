@@ -1,0 +1,10 @@
+[Unit]
+Description=Random wallpaper with Variety
+After=wm.target
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/variety
+
+[Install]
+WantedBy=mystuff.target

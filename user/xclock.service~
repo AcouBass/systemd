@@ -1,0 +1,12 @@
+[Unit]
+Description = Xclock
+After=xrdb.service
+After=xthings.service
+
+[Service]
+ExecStart = /usr/bin/xclock -update 1
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

@@ -1,0 +1,9 @@
+[Unit]
+Description = Claws
+
+[Service]
+ExecStart = /usr/bin/claws-mail
+Environment=DISPLAY=%i
+
+[Install]
+WantedBy = mystuff.target

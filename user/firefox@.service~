@@ -1,0 +1,9 @@
+[Unit]
+Description = Firefox
+
+[Service]
+ExecStart = /usr/bin/firefox
+Environment=DISPLAY=%i # <=!
+
+[Install]
+WantedBy = mystuff.target

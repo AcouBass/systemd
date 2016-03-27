@@ -1,0 +1,10 @@
+[Unit]
+Description=Pull from Owncloud calendar to Org-mode Agenda
+
+[Timer]
+OnBootSec=10s
+OnCalendar=daily
+Unit=ical2org.service
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=gpg-agent daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/gpg-agent --daemon
+ExecStop=/usr/bin/pkill gpg-agent
+Restart=on-abort
+
+[Install]
+WantedBy=mystuff.target

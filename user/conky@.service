@@ -1,0 +1,13 @@
+[Unit]
+Description = conky startup
+After=wm.target
+After=xrdb.service
+After=xthings.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/conky -c /home/eddie/.conky/%I
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy = mystuff.target

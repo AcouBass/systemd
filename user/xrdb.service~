@@ -1,0 +1,10 @@
+[Unit]
+Description=Load X resources
+
+[Service]
+ExecStart=/usr/bin/xrdb -merge /home/eddie/.Xresources
+Type=oneshot
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=mystuff.target

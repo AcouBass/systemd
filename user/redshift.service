@@ -1,0 +1,10 @@
+[Unit]
+Description=Redshift
+After=wm.target
+
+[Service]
+ExecStart=/usr/bin/redshift -l 53.5615:2.3268  
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=mystuff.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=aria2c unit
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/aria2c 
+Restart=on-abort
+
+[Install]
+WantedBy=mystuff.target

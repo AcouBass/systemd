@@ -1,0 +1,9 @@
+[Unit]
+Description=iplayer pvr
+
+[Timer]
+OnCalendar=06:30
+Unit=get_iplayer.service
+
+[Install]
+WantedBy=default.target

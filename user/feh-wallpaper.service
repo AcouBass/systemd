@@ -1,0 +1,10 @@
+[Unit]
+Description=Random wallpaper with feh
+After=wm.target
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/bin/bash -c '/usr/bin/feh --recursive --randomize --bg-scale $HOME/Pictures/Wallpapers/*'
+
+[Install]
+WantedBy=mystuff.target

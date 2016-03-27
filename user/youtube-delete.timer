@@ -1,0 +1,10 @@
+[Unit]
+Description=delete old youtube videos
+
+[Timer]
+OnBootSec=1h
+OnCalendar=daily
+Unit=youtube-delete.service
+
+[Install]
+WantedBy=default.target

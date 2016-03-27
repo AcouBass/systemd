@@ -1,0 +1,11 @@
+[Unit]
+Description=Flexget Daemon Timer
+After = network.target
+
+[Timer]
+OnBootSec=10s
+OnCalendar=hourly
+Unit=flexgettimer.service
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Unit]
+Description = x11vnc startup
+After=wm.target
+
+[Service]
+ExecStart = /usr/bin/x11vnc -ncache_cr -ncache 10 -passwd 3392idst -forever
+Environment=DISPLAY=%i
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

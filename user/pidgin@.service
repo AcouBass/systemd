@@ -1,0 +1,9 @@
+[Unit]
+Description = Pidgin
+
+[Service]
+ExecStart = /usr/bin/pidgin
+Environment=DISPLAY=%i
+
+[Install]
+WantedBy = mystuff.target

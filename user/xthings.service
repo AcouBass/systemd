@@ -1,0 +1,20 @@
+[Unit]
+Description=X specific junk
+After=wm.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/setxkbmap -layout "gb" 
+ExecStart=/usr/bin/setxkbmap -option caps:super -option shift:both_capslock_cancel
+ExecStart=/usr/bin/xset s off
+ExecStart=/usr/bin/xset s noblank
+ExecStart=/usr/bin/xset s noexpose
+ExecStart=/usr/bin/xset s off -dpms
+ExecStart=/usr/bin/xrdb -merge /home/eddie/.Xresources
+ExecStart=/usr/bin/xinput set-prop 'PS/2 Logitech Mouse' 'Device Accel Constant Deceleration' .4
+
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=mystuff.target

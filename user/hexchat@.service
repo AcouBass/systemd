@@ -1,0 +1,9 @@
+[Unit]
+Description = Hexchat
+
+[Service]
+ExecStart = /usr/bin/hexchat
+Environment=DISPLAY=%i
+
+[Install]
+WantedBy = mystuff.target

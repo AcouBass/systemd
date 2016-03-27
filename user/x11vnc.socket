@@ -1,0 +1,12 @@
+[Unit]
+Description = x11vnc startup
+After=wm.target
+
+[Socket]
+ListenStream=5900
+Accept=yes
+ReusePort=true
+
+[Install]
+WantedBy=sockets.target
+WantedBy = mystuff.target

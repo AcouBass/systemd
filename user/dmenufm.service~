@@ -1,0 +1,9 @@
+[Unit]
+Description = DMenu File Manager
+
+[Service]
+ExecStart = /home/eddie/pipes/dmenufm_path
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

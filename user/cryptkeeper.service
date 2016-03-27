@@ -1,0 +1,9 @@
+[Unit]
+Description = EncFS manager
+
+[Service]
+ExecStart = /usr/bin/cryptkeeper
+Environment=DISPLAY=:0 
+
+[Install]
+WantedBy = mystuff.target

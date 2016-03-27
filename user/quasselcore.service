@@ -1,0 +1,9 @@
+[Unit]
+Description = quasselcore
+
+[Service]
+ExecStart = /usr/bin/quasselcore
+Restart = always
+
+[Install] 
+WantedBy = mystuff.target

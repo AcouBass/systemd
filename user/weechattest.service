@@ -1,0 +1,12 @@
+[Unit]
+Description=Weechat thing
+#Wants=mpd.service
+#After=mpd.service
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/bin/weechat-curses
+
+[Install]
+WantedBy=mystuff.target

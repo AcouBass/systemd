@@ -1,0 +1,9 @@
+[Unit]
+Description = smuxi-server
+
+[Service]
+ExecStart = /usr/bin/smuxi-server
+Restart = always
+
+[Install] 
+WantedBy = mystuff.target

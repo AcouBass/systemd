@@ -1,0 +1,11 @@
+[Unit]
+Description = Password Manager
+After=xorg.target
+Wants=wm.target
+
+[Service]
+ExecStart = /usr/bin/keepassx
+Environment=DISPLAY=:0 
+
+[Install]
+WantedBy = mystuff.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Deluge Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/deluged -d -P /home/eddie/.config/deluge/deluge.pid -p 58846
+
+[Install]
+WantedBy=default.target

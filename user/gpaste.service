@@ -1,0 +1,10 @@
+[Unit]
+Description = gpaste daemon
+
+[Service]
+Type=oneshot
+ExecStart = /usr/bin/gpaste start
+ExecStop = /usr/bin/gpaste stop
+
+[Install]
+WantedBy=mystuff.target

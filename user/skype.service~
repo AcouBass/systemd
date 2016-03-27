@@ -1,0 +1,12 @@
+[Unit]
+Description = Skype
+After=xorg.target
+Wants=wm.target
+
+[Service]
+ExecStart = /usr/bin/skype
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

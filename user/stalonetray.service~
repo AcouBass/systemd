@@ -1,0 +1,10 @@
+[Unit]
+Description = Stalonetray
+
+[Service]
+ExecStart = /usr/bin/stalonetray -c /home/eddie/.stalonetrayrc
+Environment=DISPLAY=:0
+Restart = always
+
+[Install]
+WantedBy = mystuff.target

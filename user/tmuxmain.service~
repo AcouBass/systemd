@@ -1,0 +1,16 @@
+[Unit]
+Description=main tmux client
+Wants=mpd.service
+After=mpd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/tmux new-session -d -s %u -n 'ncmpcpp'
+# ExecStart=/usr/bin/tmux new-window 'ncmpcpp'
+ExecStart=/usr/bin/tmux new-window 'pulseaudio-mixer-cli'
+ExecStart=/usr/bin/tmux new-window 'zsh'
+ExecStop=/usr/bin/tmux kill-session
+
+[Install]
+WantedBy=mystuff.target
