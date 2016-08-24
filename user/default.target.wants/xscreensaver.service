@@ -1,6 +1,1 @@
-[Unit]
-Description=XScreenSaver
-[Service]
-ExecStart=/usr/bin/xscreensaver -no-splash
-[Install]
-WantedBy=default.target
+/home/eddie/.config/systemd/user/xscreensaver.service

@@ -12,8 +12,8 @@ ExecStart=/usr/bin/xset s noblank
 ExecStart=/usr/bin/xset s noexpose
 ExecStart=/usr/bin/xset s off -dpms
 ExecStart=/usr/bin/xrdb -merge /home/eddie/.Xresources
-ExecStart=/usr/bin/xinput set-prop 'PS/2 Logitech Mouse' 'Device Accel Constant Deceleration' .4
-
+ExecStart=/usr/bin/xinput --set-prop 'PS/2 BYD TouchPad' 'Device Accel Constant Deceleration' .4
+ExecStart=nvidia-settings --load-config-only
 Environment=DISPLAY=:0
 
 [Install]
